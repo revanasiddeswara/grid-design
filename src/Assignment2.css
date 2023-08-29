@@ -1,0 +1,252 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: #F2F6FF;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  header{
+    margin: -6px;
+    height: 50px;
+    border: 0px solid blue;
+    padding: 16px 78px;
+    background-color: #fff;
+  }
+  header ul{
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    color:#0084ff;
+  }
+  header ul li{
+    float: left;
+  }
+  header ul li h4{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+  }
+  header ul li p{
+    margin: -6px 0px;
+    padding: 0px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+  }
+  header ul li #dropdownText{
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    color:black;
+    padding: 23px 78px;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+  }
+  header ul li span img{
+    padding-left: 8px;
+  }
+  nav{
+    width: 70%;
+    margin: auto;
+    height: 200px;
+  }
+  nav h1{
+    margin-top: 20px;
+    color:#000;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+  }
+  nav p{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+  }
+  nav p i{
+    color:#3580C1;
+    font-weight: 600;
+    margin-right: 8px;
+    padding: 0px 0px 0px 0px;
+  }
+  nav ul{
+    list-style-type: none;
+    float: left;
+    margin: 0px 0px 20px 0px;
+    font-size: 16px;
+    padding: 16px 0px 0px 0px;
+  }
+  nav ul a li {
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 14px;
+    width: auto;
+    color:#0285FF;
+    border-radius: 15px;
+    border: 1px solid #0285FF;
+    margin: 5px;
+    cursor: pointer;
+  }
+  nav ul a :hover{
+    background-color:#0084ff;
+    color:#fff;
+  }
+  nav ul #activeCategory{
+    background-color:#0084ff;
+    color:#fff;
+  }
+  main{
+    width: 70%;
+    margin: auto;
+  }
+  main section{
+    width: 31.3%;
+    margin: 0px 0px 30px 15px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid rgba(0,168,255,.3);
+    border-radius: 5.5px;
+  }
+  main section .imgSection{
+    height: 176px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  main section div img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  main section .textSection{
+    margin: 0px;
+    padding: 10px 24px;
+  }
+  main section div .title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin: 0px;
+    font-weight: 600;
+  }
+  main section .author{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0px;
+  }
+  main section div i{/*This is for author*/
+    font-family: 'Raleway', sans-serif;
+    color:#0096ff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  main section div span{/*This is for date*/
+    font-family: "Google Sans", Roboto, arial, sans-serif;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  main section div .discription{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: rgba(0,0,0,.6);
+    margin: 4px 0px;
+  }
+  /* footer{
+    background-color: #172146;
+    padding: 80px 16%;
+    margin: -6px;
+  }
+   */
+
+  /* Add a media query for screens with max width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+    /* Adjust header padding for smaller screens */
+    header {
+      padding: 40px 24px;
+    }
+
+    /* Hamburger menu icon */
+.menu-icon {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #0084ff;
+}
+
+/* Mobile navigation menu */
+.menu {
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    color: #0084ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Media query for screens with max width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show on smaller screens */
+        margin: 16px 24px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hide by default on smaller screens */
+    }
+
+    /* Show menu when the menu icon is clicked */
+    .menu.active {
+        display: flex;
+    }
+}
+
+    nav {
+      width: 90%;
+      padding-top: 20px;
+      height: auto;
+      margin-bottom: 80%;
+    }
+  
+    nav ul {
+      padding: 16px 0;
+      text-align: center;
+      margin-bottom: 10%;
+    }
+  
+    main section {
+      width: 100%;
+      margin: 0 auto 30px;
+      display: block;
+    }
+  
+    main section .textSection {
+      padding: 10px 16px;
+    }
+  }
+  
